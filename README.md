@@ -1,4 +1,4 @@
     # Star Rating System using HTML CSS Font Awesome
 
 
-    ![](StarRatingSystem.gif)
+    ![star rating gif](img/StarRatingSystem.gif)
