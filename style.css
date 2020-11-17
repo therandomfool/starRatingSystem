@@ -16,6 +16,7 @@ html, body {
 }
 
 .container{
+    position: relative;
     width: 400px;
     background: #111;
     padding: 20px 30px;
@@ -26,6 +27,30 @@ html, body {
     justify-content: center ;
     flex-direction: column;
 
+}
+
+.container .opst{
+    display: none;
+}
+
+.container .text{
+    font-size: 25px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.container .edit:hover{
+    text-decoration: underline;
+}
+
+.container .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #666666;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .container .star-widget input{
@@ -68,6 +93,14 @@ input#rate-5:checked ~label{
 }
 #rate-5:checked ~ form header:before{
     content: "😍 I just love it 😍";
+}
+
+.container form{
+    display: none;
+}
+
+input:checked ~ form{
+    display: block;
 }
 
 form header{
